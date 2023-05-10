@@ -24,6 +24,10 @@ class Event < ApplicationRecord
     held_at < Time.current
   end
 
+  def only_woman?
+    self.only_woman == 1
+  end
+
   def future?
     !past?
   end
