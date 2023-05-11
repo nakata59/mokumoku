@@ -82,8 +82,4 @@ class User < ApplicationRecord
   def woman?
     self.gender == "woman"
   end
-  
-  def not_woman?
-    !woman?
-  end 
 end

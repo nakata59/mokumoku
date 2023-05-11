@@ -96,7 +96,7 @@
                               data: { confirm: 'キャンセルします' }
                   %>
                 <% else %>
-                  <% if @event.only_woman? and current_user.not_woman?  %>
+                  <% if @event.only_woman? && !current_user.woman?  %>
                     このもくもく会は女性限定です
                   <% else %>
                     <%= link_to 'このもくもく会に参加する',
